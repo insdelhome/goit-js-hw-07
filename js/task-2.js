@@ -29,5 +29,4 @@ const galleryList = document.querySelector('ul.gallery');
 const galleryMarkup = images.map(
   image => `<li><img src="${image.url}" alt="${image.alt}" /></li>`
 );
-galleryMarkup.length = 3;
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup.join(''));
